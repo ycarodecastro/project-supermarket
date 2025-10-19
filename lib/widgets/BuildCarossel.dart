@@ -22,7 +22,7 @@ class _BuildCarosselState extends State<BuildCarossel> {
     return Column(
       children: [
         SizedBox(
-          height: 200,
+          height: 210,
           child: Stack(
             alignment: Alignment.center,
             children: [

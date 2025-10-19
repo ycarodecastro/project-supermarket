@@ -3,13 +3,17 @@ class Product {
   String store;
   String image;
   String descripton;
-  double price;
+  double currentPrice;
+  double oldPrice;
+  double promo;
 
   Product({
     required this.name,
     required this.store,
     required this.image,
     required this.descripton,
-    required this.price,
+    required this.currentPrice,
+    required this.oldPrice,
+    required this.promo,
   });
 }

@@ -119,8 +119,8 @@ class _CategoryItemState extends State<CategoryItem> {
               child: Column(
                 children: [
                   Container(
-                    width: 65,
-                    height: 70,
+                    width: 67,
+                    height: 71,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: widget.color.withOpacity(0.12),

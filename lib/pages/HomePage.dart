@@ -28,11 +28,11 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(height: 22),
                 sectionTitle("Promoções Especiais"),
                 BuildCarossel(),
-                const SizedBox(height: 22),
+                const SizedBox(height: 28),
 
                 sectionTitle("Categorias"),
                 BuildIcons(),
-                const SizedBox(height: 22),
+                const SizedBox(height: 28),
 
                 sectionTitle("Recomendações"),
 
@@ -46,8 +46,10 @@ class _HomePageState extends State<HomePage> {
                         return BuildHomeCards(
                           productName: produto.name,
                           productStore: produto.store,
-                          productPrice: produto.price,
+                          productCurrentPrice: produto.currentPrice,
+                          productOldPrice: produto.oldPrice,
                           productImage: produto.image,
+                          productPromo: produto.promo,
                           isSelected:
                               selectedIndex ==
                               index, // passa se está selecionado

@@ -59,7 +59,7 @@ class _CategoryPageState extends State<CategoryPage> {
                   return BuildCategoryCards(
                     cardName: product.name,
                     cardStore: product.store,
-                    cardPrice: product.price,
+                    cardPrice: product.currentPrice,
                     cardDescripton: product.descripton,
                     cardImage: product.image,
                   );

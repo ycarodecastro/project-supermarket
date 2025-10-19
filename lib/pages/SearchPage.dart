@@ -58,7 +58,7 @@ class _SearchPageState extends State<SearchPage> {
                 return BuildCategoryCards(
                   cardName: product.name,
                   cardStore: product.store,
-                  cardPrice: product.price,
+                  cardPrice: product.currentPrice,
                   cardDescripton: product.descripton,
                   cardImage: product.image,
                 );
