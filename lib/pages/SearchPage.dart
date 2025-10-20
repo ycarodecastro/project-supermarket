@@ -88,7 +88,7 @@ class _SearchPageState extends State<SearchPage> {
         ),
         child: TextField(
           controller: _searchController,
-          onChanged: (_) => setState(() {}), // atualiza lista ao digitar
+          onChanged: (query) {_filterProducts(query)}, // atualiza lista ao digitar
           decoration: InputDecoration(
             hintText: "Search...",
             hintStyle: const TextStyle(color: Colors.grey, fontSize: 16),
