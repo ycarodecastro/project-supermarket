@@ -1,16 +1,9 @@
-# aplication_project
+# Projeto de um aplicativo de lojas usando o flutter
 
-A new Flutter project.
+Este aplicativo facilita o acesso a produtos em promoção, conectando consumidores a ofertas de forma rápida e prática. Ao incentivar a 
+compra consciente, ajuda a equilibrar a oferta e a demanda, reduzindo o desperdício de alimentos e promovendo um consumo mais sustentável.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+tecnologias usadas : 
+- Flutter
+- Spring bot
+- PostgreSQL
