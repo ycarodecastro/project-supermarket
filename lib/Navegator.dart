@@ -56,21 +56,16 @@ class _NavegatorState extends State<Navegator> {
   // ------------------------------ FUNÇÕES AUXILIARES ------------------------------
 
   BottomNavigationBarItem buildNavItem(IconData icon, String label, int index) {
-    return BottomNavigationBarItem(
-      label: label,
-      icon: TweenAnimationBuilder<double>(
-        tween: Tween<double>(
-          begin: 1.0,
-          end: currentIndex_ == index ? 1.2 : 1.0,
-        ),
-        duration: const Duration(milliseconds: 200),
-        curve: Curves.easeOut,
-        builder: (context, scale, child) {
-          return Transform.scale(scale: scale, child: Icon(icon, size: 28));
-        },
-      ),
-    );
-  }
+  return BottomNavigationBarItem(
+    label: label,
+    icon: AnimatedScale(
+      scale: currentIndex_ == index ? 1.2 : 1.0,
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeOut,
+      child: Icon(icon, size: 28),
+    ),
+  );
+}
 
   Widget buildSearch(TextEditingController controller) {
     return Container(
